@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "dbgen": "kysely-codegen && kysely-codegen --out-file src/server/db_gen.ts"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.3.1",
@@ -15,8 +16,12 @@
     "@trpc/next": "^10.26.0",
     "@trpc/react-query": "^10.26.0",
     "@trpc/server": "^10.26.0",
+    "@types/pg": "^8.10.2",
+    "kysely": "^0.25.0",
+    "kysely-codegen": "^0.10.1",
     "next": "^13.4.2",
     "next-auth": "^4.22.1",
+    "pg": "^8.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "1.12.2",
